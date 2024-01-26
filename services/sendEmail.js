@@ -36,7 +36,7 @@ exports.sendEmail = (userName, verificationCode, sourceEmail, userInfo, isVerify
         });
       }
     } else {
-      emailSubject = "Welcome to JKTeches";
+      emailSubject = "Welcome to Groupon";
       emailBody = customerRegistrationHtmlTemplate;
     } 
     

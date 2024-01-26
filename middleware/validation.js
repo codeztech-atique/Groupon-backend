@@ -16,7 +16,7 @@ exports.validateSocialRegistrationAPI = (req, res, next) => {
       error += "deviceType, "
     } 
     if(req.body.profileurl === undefined || req.body.profileurl === '') {
-      req.body.profileurl = "https://static.grouponwiki.com/user.png";
+      req.body.profileurl = "https://d20bo297cxt3li.cloudfront.net/user.png";
     }
     if (error !== '') {
       res.status(400).send({
@@ -40,7 +40,7 @@ exports.validateSocialRegistrationAPI = (req, res, next) => {
       error += "name, "
     }
     if(req.body.profileurl === undefined || req.body.profileurl === '') {
-      req.body.profileurl = "https://static.grouponwiki.com/user.png";
+      req.body.profileurl = "https://d20bo297cxt3li.cloudfront.net/user.png";
     }
     if (req.body.deviceType === undefined || req.body.deviceType === '') {
       console.log(chalk.red('deviceType is missing'));
@@ -233,7 +233,7 @@ exports.validateRegisterUserAPI = (req, res, next) => {
   // }
 
   if(req.body.profileurl === undefined || req.body.profileurl === '') {
-    req.body.profileurl = "https://static.grouponwiki.com/user.png";
+    req.body.profileurl = "https://d20bo297cxt3li.cloudfront.net/user.png";
   }
 
   if(req.body.source === undefined || req.body.source === '') {
